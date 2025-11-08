@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Grades Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Grades Portal</h1>
+
+  <!-- Credentials Table -->
+  <h2>Student Credentials (For Testing)</h2>
+  <table border="1" id="credentialsTable">
+    <tr>
+      <th>Name</th>
+      <th>Student ID</th>
+      <th>Password</th>
+    </tr>
+  </table>
+
+  <!-- Login Form -->
+  <div id="login">
+    <h2>Login</h2>
+    <label>Student ID:</label>
+    <input type="text" id="studentId" placeholder="Enter Student ID">
+    <br>
+    <label>Password:</label>
+    <input type="password" id="password" placeholder="Enter Password">
+    <br>
+    <button onclick="login()">Login</button>
+    <p id="error" style="color:red;"></p>
+  </div>
+
+  <!-- Grades Section -->
+  <div id="grades" style="display:none;">
+    <h2>Student Info</h2>
+    <p id="info"></p>
+    <h3>Grades</h3>
+    <ul id="gradesList"></ul>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
